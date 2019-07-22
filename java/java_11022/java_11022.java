@@ -1,6 +1,8 @@
+package java.java_11022;
+
 import java.util.Scanner;
 
-public class java_11021 {
+public class java_11022 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,7 +11,7 @@ public class java_11021 {
 		for(int i = 0; i < size; i++) {
 			String getData = s.nextLine();
 			String data[] = getData.split(" ");
-			System.out.println("Case #" + (i + 1) + ": " + (Integer.parseInt(data[0]) + Integer.parseInt(data[1])));
+			System.out.println("Case #" + (i + 1) + ": " + data[0] + " + " + data[1] + " = " + (Integer.parseInt(data[0]) + Integer.parseInt(data[1])));
 		}
 		
 	}

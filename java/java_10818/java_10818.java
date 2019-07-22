@@ -1,3 +1,5 @@
+package java.java_10818;
+
 import java.util.Scanner;
 
 public class java_10818 {

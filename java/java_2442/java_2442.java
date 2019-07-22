@@ -1,6 +1,8 @@
+package java.java_2442;
+
 import java.util.Scanner;
 
-public class java_2445 {
+public class java_2442 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

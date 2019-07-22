@@ -1,3 +1,5 @@
+package java.java_10950;
+
 import java.util.Scanner;
 
 public class java_10950 {
