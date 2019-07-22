@@ -16,6 +16,7 @@ public class _10952 {
 			}
 			System.out.println(Integer.parseInt(data[0]) + Integer.parseInt(data[1]));
 		}
+		s.close();
 		
 	}
 

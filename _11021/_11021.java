@@ -14,6 +14,8 @@ public class _11021 {
 			System.out.println("Case #" + (i + 1) + ": " + (Integer.parseInt(data[0]) + Integer.parseInt(data[1])));
 		}
 		
+		s.close();
+		
 	}
 
 }

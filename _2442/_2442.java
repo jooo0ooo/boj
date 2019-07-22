@@ -21,6 +21,8 @@ public class _2442 {
 			System.out.println();
 			
 		}
+		
+		s.close();
 	}
 
 }

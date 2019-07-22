@@ -34,6 +34,8 @@ public class _2444 {
 			System.out.println();
 			
 		}
+		
+		s.close();
 	}
 
 }

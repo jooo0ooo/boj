@@ -20,6 +20,8 @@ public class _10950 {
 		 for(int j = 0 ; j < size; j++) {
 			 System.out.println(arr[j]);
 		 }
+		 
+		 s.close();
 	}
 
 }

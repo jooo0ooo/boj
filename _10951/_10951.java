@@ -13,6 +13,7 @@ public class _10951 {
 			String data[] = getData.split(" ");
 			System.out.println(Integer.parseInt(data[0]) + Integer.parseInt(data[1]));
 		}
+		s.close();
 	}
 
 }

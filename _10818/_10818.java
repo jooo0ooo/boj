@@ -25,6 +25,8 @@ public class _10818 {
 		
 		System.out.println(min + " " + max);
 		
+		s.close();
+		
 	}
 
 }
