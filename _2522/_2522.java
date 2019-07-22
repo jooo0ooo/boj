@@ -1,8 +1,8 @@
-package _2445;
+package _2522;
 
 import java.util.Scanner;
 
-public class _2445 {
+public class _2522 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -11,10 +11,7 @@ public class _2445 {
 		int size = s.nextInt();
 		
 		for(int i = 0; i < size; i++) {
-			for(int k = 0; k <= i; k++) {
-				System.out.print("*");
-			}
-			for(int j = (size - (i + 1)) * 2; j > 0; j--) {
+			for(int j = (size - (i + 1)); j > 0; j--) {
 				System.out.print(" ");
 			}
 			for(int k = 0; k <= i; k++) {
@@ -24,10 +21,7 @@ public class _2445 {
 		}
 		
 		for(int i = size - 1; i > 0; i--) {
-			for(int k = 0; k < i; k++) {
-				System.out.print("*");
-			}
-			for(int j = (size - i) * 2; j > 0; j--) {
+			for(int j = (size - i); j > 0; j--) {
 				System.out.print(" ");
 			}
 			for(int k = 0; k < i; k++) {
