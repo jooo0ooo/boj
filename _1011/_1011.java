@@ -6,13 +6,13 @@ public class _1011 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		Scanner s = new Scanner(System.in);
 		int testCaseNum = s.nextInt();
 		
 		long [] x = new long[testCaseNum];
 		long [] y = new long[testCaseNum];
 		long [] result = new long[testCaseNum];
-		long n = 0;
 		
 		for(int i = 0; i < testCaseNum; i++) {
 			x[i] = s.nextInt();
@@ -20,29 +20,28 @@ public class _1011 {
 		}
 		
 		for(int i = 0; i < testCaseNum; i++) {
-			long middle = y[i] - x[i];
 			
-			switch((int) middle) {
-			case 1:
-				middle = 1;
-				break;
-			case 2:
-				middle = 2;
-				break;
-			case 0:
-				middle = 0;
-				break;
+			long distance = y[i] - x[i];
+			
+			if(distance <= 0) {
+				System.out.println(0);
+				return;
 			}
-						
-			for(n = 0; middle > 2 && !(middle - 1 > n * (n + 1) / 2 && (n + 1) * (n + 2) / 2 >= middle - 1); n++) {
+			
+			long n = (long) Math.floor(Math.sqrt(distance));
+			
+			if(Math.sqrt(distance) == n) {
 				
-			}
-			
-			result[i] = n + 2;
-			if(middle <= 2) {
-				System.out.println(middle);
-			} else {
-				System.out.println(result[i]);
+				System.out.println(result[i] = 2 * n - 1);
+				
+			} else if(n * n < distance && distance <= n * n + n) {
+				
+				System.out.println(result[i] = 2 * n);
+				
+			} else if(n * n + n < distance && distance < (n + 1) * (n + 1)) {
+				
+				System.out.println(result[i] = 2 * n + 1);
+				
 			}
 			
 		}
