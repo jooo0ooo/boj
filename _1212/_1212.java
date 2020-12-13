@@ -18,8 +18,6 @@ public class _1212 {
 		
 		bw.write(a.toString(2));
 		
-		
-		
 		bw.flush();
 		bw.close();
 		
