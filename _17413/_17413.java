@@ -16,7 +16,7 @@ public class _17413 {
 		
 		String input = br.readLine();
 		ArrayList<String> wordList = new ArrayList<>();
-		boolean flag = false; //0 -> 태그 입력 중
+		boolean flag = false;
 		String temp = "";
 		for (int i = 0; i < input.length(); i++) {
 			
