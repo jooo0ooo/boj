@@ -34,7 +34,7 @@ public class _15665 {
 		}
 		Arrays.sort(print);
 		
-		dfs(1, 1);
+		dfs(1);
 		
 		for (String result : hashSet) {
 			bw.write(result + "\n");
@@ -44,7 +44,7 @@ public class _15665 {
 		bw.close();
 	}
 	
-	public static void dfs (int depth, int count) throws IOException {
+	public static void dfs (int depth) throws IOException {
 		if (depth == m + 1) {
 			String data = "";
 			for (int i = 1; i <= m; i++) {
@@ -56,7 +56,7 @@ public class _15665 {
 		
 		for (int i = 1; i <= n; i++) {
 			arr[depth] = i;
-			dfs(depth + 1, i);
+			dfs(depth + 1);
 		}
 		
 	}
