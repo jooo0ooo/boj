@@ -1,4 +1,4 @@
-package _15663;
+package _15664;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.LinkedHashSet;
 import java.util.StringTokenizer;
 
-public class _15663 {
+public class _15664 {
 	
 	public static int n, m;
 	public static boolean visited[];
@@ -34,7 +34,7 @@ public class _15663 {
 		}
 		Arrays.sort(print);
 		
-		dfs(1);
+		dfs(1, 1);
 		
 		for (String result : hashSet) {
 			bw.write(result + "\n");
@@ -44,7 +44,7 @@ public class _15663 {
 		bw.close();
 	}
 	
-	public static void dfs (int depth) throws IOException {
+	public static void dfs (int depth, int count) throws IOException {
 		if (depth == m + 1) {
 			String data = "";
 			for (int i = 1; i <= m; i++) {
@@ -55,10 +55,10 @@ public class _15663 {
 		}
 		
 		for (int i = 1; i <= n; i++) {
-			if (!visited[i]) {
+			if (!visited[i] && count <= i) {
 				visited[i] = true;
 				arr[depth] = i;
-				dfs(depth + 1);
+				dfs(depth + 1, i);
 				visited[i] = false;
 			}
 			
